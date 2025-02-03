@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&icon_" />
+    <link rel="stylesheet" href="output.css">
+</head>
+
+<body class="min-h-screen flex items-center justify-center bg-gradient-to-r from-indigo-900 to-purple-600 text-white">
+    <div class="p-4 border-2 rounded-2xl w-full max-w-md bg-gradient-to-b from-gray-900 to-black">
+        <span class="material-symbols-outlined">
+            edit_note
+        </span>
+        <h1 class="text-center text-2xl font-semibold">Register Here</h1>
+        <form id="form" action="https://api.web3forms.com/submit" method="POST">
+            <!-- Username Field -->
+            <div class="field p-2">
+                <input type="hidden" name="access_key" value="d4f2cb48-a0d9-4573-97ec-b5de66e52fbd">
+                <label class="text-sm font-medium">Username:</label>
+                <input type="text" name="Username" id="uname" placeholder="vijay"
+                    class="border-2 p-2 w-full rounded-md">
+                <small class="text-red-700"></small>
+            </div>
+            <!-- Email Field -->
+            <div class="field p-2">
+                <label class="text-sm font-medium">Email:</label>
+                <input type="email" name="email" id="email" placeholder="vijay@gmail.com"
+                    class="border-2 p-2 w-full rounded-md">
+                <small class="text-red-700"></small>
+            </div>
+            <!-- Password Field -->
+            <div class="field p-2">
+                <label class="text-sm font-medium">Password:</label>
+                <input type="password" id="password" placeholder="password" class="border-2 p-2 w-full rounded-md">
+                <small class="text-red-700"></small>
+            </div>
+            <!-- Confirm Password Field -->
+            <div class="field p-2">
+                <label class="text-sm font-medium">Confirm Password:</label>
+                <input type="password" id="cpassword" placeholder="cpassword" class="border-2 p-2 w-full rounded-md">
+                <small class="text-red-700"></small>
+            </div>
+            <!-- Phone Number Field -->
+            <div class="field p-2">
+                <label class="text-sm font-medium">Phone Number:</label>
+                <input type="text" name="phone number" id="phonenumber" placeholder="9999999999"
+                    class="border-2 p-2 w-full rounded-md">
+                <small class="text-red-700"></small>
+            </div>
+            <!-- Terms & Conditions Field -->
+            <div class="field p-2">
+                <input type="checkbox" id="tc" class="w-3 h-3 text-blue-500">
+                <label class="ml-2 text-sm">I agree to terms and conditions</label>
+                <small id="tc-error" class="text-red-700 hidden"></small>
+            </div>
+            <!-- Submit Button -->
+            <input type="submit" value="register"
+                class="border w-full p-2 text-white bg-blue-600 hover:bg-blue-500 cursor-pointer">
+        </form>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
